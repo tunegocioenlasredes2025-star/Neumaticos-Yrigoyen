@@ -69,14 +69,14 @@ section{padding:80px 0}
 .portada h1 em{font-style:normal;color:var(--amarillo);display:block}
 .bajada{color:var(--gris-2);font-size:clamp(17px,1.9vw,19.5px);max-width:520px;margin:20px 0 28px}
 .botones{display:flex;flex-wrap:wrap;gap:12px}
-.estrellas-linea{display:inline-flex;align-items:center;gap:10px;margin-top:24px;background:var(--asfalto-2);border:1px solid var(--linea);border-radius:999px;padding:9px 18px 9px 14px;font-size:14.5px;color:var(--gris-2)}
+.estrellas-linea{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px 10px;max-width:100%;margin-top:24px;background:var(--asfalto-2);border:1px solid var(--linea);border-radius:20px;padding:9px 18px 9px 14px;font-size:14.5px;color:var(--gris-2)}
 .estrellas-linea b{font-family:var(--display);font-size:22px;color:var(--blanco);letter-spacing:.02em}
 .estrellas-linea .est{color:var(--amarillo);letter-spacing:2px}
 
 /* neumático dibujado */
 .rueda{position:relative;display:grid;place-items:center}
 .rueda svg{width:min(100%,430px);height:auto;filter:drop-shadow(0 30px 50px #000a)}
-.sello24{position:absolute;right:2%;top:2%;width:112px;height:112px;border-radius:50%;background:var(--amarillo);color:#17140a;display:grid;place-items:center;text-align:center;box-shadow:0 18px 34px -12px #000c;border:3px solid var(--asfalto);z-index:2}
+.sello24{position:absolute;left:-4%;top:-3%;width:104px;height:104px;border-radius:50%;background:var(--amarillo);color:#17140a;display:grid;place-items:center;text-align:center;box-shadow:0 18px 34px -12px #000c;border:3px solid var(--asfalto);z-index:2}
 .sello24 b{display:block;font-family:var(--display);font-size:34px;line-height:.9;letter-spacing:.01em}
 .sello24 span{display:block;font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;margin-top:3px;line-height:1.25}
 .rueda .pie{margin-top:16px;font-family:var(--mono);font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--gris);text-align:center}
@@ -148,6 +148,17 @@ section{padding:80px 0}
 .senal h3{font-size:21px;letter-spacing:.02em;margin-bottom:8px}
 .senal p{color:var(--gris);font-size:15px;line-height:1.45}
 
+/* ---------- fotos del local ---------- */
+.fotos{background:var(--asfalto-2);border-block:1px solid var(--linea)}
+.muro{display:grid;grid-template-columns:1.25fr .875fr .875fr;gap:14px;margin-top:34px}
+.muro figure{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--linea);background:var(--asfalto-3);min-height:260px}
+.muro img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0}
+.muro figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:34px 14px 12px;
+  background:linear-gradient(transparent,#0b0e10ee);font-family:var(--mono);font-size:11.5px;
+  font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--amarillo)}
+.muro .alta{grid-row:span 2}
+.pie-fotos{margin-top:18px;font-size:14.5px;color:var(--gris)}
+
 /* ---------- google ---------- */
 .google-bloque{background:var(--amarillo);color:#17140a;padding:64px 0;position:relative;overflow:hidden}
 .google-bloque::before{content:'4,5';position:absolute;right:-1%;top:50%;translate:0 -50%;font-family:var(--display);font-size:clamp(200px,30vw,420px);color:#17140a14;line-height:.8;pointer-events:none}
@@ -198,6 +209,8 @@ footer a{color:var(--gris-2);text-decoration:none}
   .datos li:nth-child(3){border-left:0;padding-left:0}
   .datos li:nth-child(-n+2){border-bottom:1px solid var(--linea)}
   .grilla-s{grid-template-columns:1fr 1fr}
+  .muro{grid-template-columns:1fr 1fr}
+  .muro .alta{grid-row:span 2;min-height:340px}
   .google-bloque .caja{gap:20px;justify-items:start}
   section{padding:58px 0}
   .barra{display:grid}
@@ -208,6 +221,8 @@ footer a{color:var(--gris-2);text-decoration:none}
   body{font-size:16px}
   .campos{grid-template-columns:1fr 1fr}
   .grilla-s{grid-template-columns:1fr}
+  .muro{grid-template-columns:1fr}
+  .muro .alta{grid-row:auto;min-height:300px}
   .portada .botones .bt{width:100%}
   .calculadora{padding:20px 16px}
   .marca small{display:none}
@@ -229,6 +244,7 @@ footer a{color:var(--gris-2);text-decoration:none}
       <a href="#medida">Tu medida</a>
       <a href="#leer">Cómo leerla</a>
       <a href="#senales">Cuándo cambiarlas</a>
+      <a href="#fotos">El local</a>
       <a href="#donde">Dónde estamos</a>
     </nav>
     <a class="bt bt-am" href="tel:+541169871545" aria-label="Llamar al 6987-1545">
@@ -412,6 +428,31 @@ footer a{color:var(--gris-2);text-decoration:none}
     </div>
   </section>
 
+  <section class="fotos" id="fotos">
+    <div class="caja">
+      <div class="cabeza">
+        <div><div class="rotulo">El local por dentro</div><h2>Así se trabaja en Yrigoyen 33</h2></div>
+        <p>Fotos reales del local. Stock a la vista, el auto arriba del criquet y la rueda saliendo,
+          a la hora que sea.</p>
+      </div>
+      <div class="muro">
+        <figure class="alta">
+          <img src="img/stock-cubiertas.jpg" alt="Pilas de cubiertas y llantas ordenadas dentro del local" loading="lazy" width="659" height="1082">
+          <figcaption>El stock, a la vista</figcaption>
+        </figure>
+        <figure>
+          <img src="img/cambio-de-rueda.jpg" alt="Auto levantado con criquet y la rueda delantera desmontada" loading="lazy" width="1400" height="720">
+          <figcaption>Arriba del criquet</figcaption>
+        </figure>
+        <figure>
+          <img src="img/de-noche.jpg" alt="Trabajando en la rueda de un auto de noche, en el local" loading="lazy" width="900" height="1120">
+          <figcaption>De noche también</figcaption>
+        </figure>
+      </div>
+      <p class="pie-fotos">¿Te pasó de quedarte con una rueda baja a la madrugada? Acá estamos.</p>
+    </div>
+  </section>
+
   <section class="google-bloque">
     <div class="caja">
       <div class="puntaje">
@@ -421,8 +462,8 @@ footer a{color:var(--gris-2);text-decoration:none}
       </div>
       <div>
         <h2>348 personas nos calificaron. Nos pusieron 4,5</h2>
-        <p>No es una opinión suelta: son cientos de vecinos de Morón que pasaron por acá, muchos
-          de madrugada. Está todo publicado en nuestra ficha de Google, lo podés leer vos mismo.</p>
+        <p>No es una opinión suelta: son cientos de vecinos de Morón que ya pasaron por acá, a toda hora
+          del día y de la noche. Está todo publicado en nuestra ficha de Google, lo podés leer vos mismo.</p>
       </div>
     </div>
   </section>
@@ -437,7 +478,6 @@ footer a{color:var(--gris-2);text-decoration:none}
             <div><b>Dirección</b>Av. Hipólito Yrigoyen 33, Morón (B1708)<br><a href="https://www.google.com/maps/search/?api=1&query=Neum%C3%A1ticos+Yrigoyen+Av.+Hip%C3%B3lito+Yrigoyen+33+Mor%C3%B3n" target="_blank" rel="noopener">Cómo llegar →</a></div></div>
           <div class="fila"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
             <div><b>Teléfono</b><a href="tel:+541169871545">011 6987-1545</a></div></div>
-          <!-- Horario tomado de la ficha de Google (los 7 días, 24 h). Confirmar con el dueño. -->
           <div class="fila"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
             <div><b>Horarios</b>Abierto las 24 horas, los 7 días de la semana.</div></div>
         </div>
@@ -479,7 +519,6 @@ footer a{color:var(--gris-2);text-decoration:none}
 
 <script>
 // Arma el mensaje de WhatsApp con la medida que cargó la persona.
-// DUDA: confirmar si el 011 6987-1545 tiene WhatsApp. Si no, se saca el botón y queda solo el teléfono.
 (function () {
   var f = document.getElementById('calc');
   var out = document.getElementById('salidaTxt');
