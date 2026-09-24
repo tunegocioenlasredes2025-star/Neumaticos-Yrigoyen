@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neumáticos Yrigoyen · Gomería 24 horas en Morón</title>
+<meta name="description" content="Gomería abierta las 24 horas en Morón, Av. Hipólito Yrigoyen 33. Autos y motos. 4,5 en Google con 348 opiniones. Tel. 011 6987-1545.">
+<!-- Demo de TNR para mostrarle al dueño: no se indexa hasta que la contrate. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0e0e10">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --asfalto:#0e0e10; --asfalto-2:#16171a; --asfalto-3:#1e2024; --linea:#2c2f35;
+  --amarillo:#ffd21e; --amarillo-2:#ffe268; --amarillo-osc:#3a2f00;
+  --blanco:#f7f7f4; --gris:#9a9da3; --gris-2:#c8cbd1;
+  --hueso:#f2f1ec; --tinta:#111214; --tinta-2:#4c505a;
+  --wa:#25d366;
+  --display:'Anton',Impact,sans-serif; --texto:'Inter',system-ui,sans-serif; --mono:'Roboto Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--asfalto);color:var(--blanco);font-family:var(--texto);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.caja{width:min(1140px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:.98;letter-spacing:.005em;text-transform:uppercase}
+h2{font-size:clamp(32px,5.2vw,54px)}
+section{padding:80px 0}
+.rotulo{font-family:var(--mono);font-weight:700;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--amarillo);display:inline-block;margin-bottom:14px;border-bottom:2px solid var(--amarillo);padding-bottom:4px}
+.claro .rotulo{color:var(--tinta);border-color:var(--amarillo)}
+
+/* ---------- botones ---------- */
+.bt{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--display);font-size:18px;letter-spacing:.03em;text-transform:uppercase;padding:16px 26px;border-radius:6px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .14s,background .14s,color .14s;line-height:1.05}
+.bt:active{transform:scale(.97)}
+.bt svg{width:20px;height:20px;flex:none}
+.bt-am{background:var(--amarillo);color:#17140a}
+.bt-am:hover{background:var(--amarillo-2)}
+.bt-wa{background:var(--wa);color:#04210e}
+.bt-wa:hover{background:#3ae57b}
+.bt-linea{border-color:#ffffff40;color:var(--blanco)}
+.bt-linea:hover{border-color:var(--amarillo);color:var(--amarillo)}
+.claro .bt-linea{border-color:#11121440;color:var(--tinta)}
+.claro .bt-linea:hover{border-color:var(--tinta);color:var(--tinta)}
+
+/* ---------- barra superior ---------- */
+.top{position:sticky;top:0;z-index:40;background:#0e0e10ee;backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+.top .caja{display:flex;align-items:center;justify-content:space-between;gap:16px;height:66px}
+.marca{display:flex;align-items:center;gap:11px;text-decoration:none}
+.sigla{width:44px;height:44px;border-radius:8px;background:var(--amarillo);color:#17140a;font-family:var(--display);font-size:20px;display:grid;place-items:center;letter-spacing:.02em;flex:none}
+.marca b{display:block;font-family:var(--display);font-size:19px;letter-spacing:.03em;text-transform:uppercase;line-height:1}
+.marca small{display:block;font-family:var(--mono);font-size:11px;color:var(--gris);letter-spacing:.07em;margin-top:4px;text-transform:uppercase}
+.nav{display:flex;gap:24px;font-size:15px;font-weight:500}
+.nav a{text-decoration:none;color:var(--gris-2)}
+.nav a:hover{color:var(--amarillo)}
+.top .bt{padding:11px 18px;font-size:16px}
+
+/* ---------- portada ---------- */
+.portada{position:relative;overflow:hidden;padding:52px 0 64px;
+  background:radial-gradient(760px 460px at 82% 35%,#ffd21e16,transparent 66%),var(--asfalto)}
+.portada::after{content:'';position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(90deg,#ffffff08 0 1px,transparent 1px 44px);
+  mask-image:linear-gradient(180deg,transparent,#000 40%,transparent)}
+.portada .caja{position:relative;display:grid;grid-template-columns:1.06fr .94fr;gap:40px;align-items:center}
+.portada h1{font-size:clamp(40px,6.6vw,80px);max-width:9ch}
+.portada h1 em{font-style:normal;color:var(--amarillo);display:block}
+.bajada{color:var(--gris-2);font-size:clamp(17px,1.9vw,19.5px);max-width:520px;margin:20px 0 28px}
+.botones{display:flex;flex-wrap:wrap;gap:12px}
+.estrellas-linea{display:inline-flex;align-items:center;gap:10px;margin-top:24px;background:var(--asfalto-2);border:1px solid var(--linea);border-radius:999px;padding:9px 18px 9px 14px;font-size:14.5px;color:var(--gris-2)}
+.estrellas-linea b{font-family:var(--display);font-size:22px;color:var(--blanco);letter-spacing:.02em}
+.estrellas-linea .est{color:var(--amarillo);letter-spacing:2px}
+
+/* neumático dibujado */
+.rueda{position:relative;display:grid;place-items:center}
+.rueda svg{width:min(100%,430px);height:auto;filter:drop-shadow(0 30px 50px #000a)}
+.sello24{position:absolute;right:2%;top:2%;width:112px;height:112px;border-radius:50%;background:var(--amarillo);color:#17140a;display:grid;place-items:center;text-align:center;box-shadow:0 18px 34px -12px #000c;border:3px solid var(--asfalto);z-index:2}
+.sello24 b{display:block;font-family:var(--display);font-size:34px;line-height:.9;letter-spacing:.01em}
+.sello24 span{display:block;font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;margin-top:3px;line-height:1.25}
+.rueda .pie{margin-top:16px;font-family:var(--mono);font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--gris);text-align:center}
+
+/* ---------- cinta ---------- */
+.cinta{background:var(--amarillo);color:#17140a;overflow:hidden;border-block:3px solid var(--asfalto)}
+.cinta-track{display:flex;width:max-content;animation:corre 30s linear infinite}
+.cinta span{font-family:var(--mono);font-weight:700;font-size:16px;letter-spacing:.1em;padding:12px 0;white-space:nowrap;display:flex;align-items:center}
+.cinta span::after{content:'●';margin:0 22px;font-size:9px;opacity:.55}
+@keyframes corre{to{transform:translateX(-50%)}}
+
+/* ---------- datos ---------- */
+.datos{background:var(--asfalto-2);border-bottom:1px solid var(--linea)}
+.datos ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr)}
+.datos li{padding:24px 20px;border-left:1px solid var(--linea)}
+.datos li:first-child{border-left:0;padding-left:0}
+.datos strong{display:block;font-family:var(--display);font-size:27px;line-height:1.05;letter-spacing:.02em}
+.datos strong i{font-style:normal;color:var(--amarillo)}
+.datos span{display:block;font-size:14px;color:var(--gris);margin-top:7px;line-height:1.35}
+
+/* ---------- medida (herramienta) ---------- */
+.medida{background:var(--asfalto-3);border-block:1px solid var(--linea)}
+.medida .caja{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:start}
+.medida p.lead{color:var(--gris-2);margin:16px 0 22px;font-size:18px}
+.pasos{list-style:none;display:grid;gap:0;counter-reset:p}
+.pasos li{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:15px 0;border-top:1px solid var(--linea)}
+.pasos li:last-child{border-bottom:1px solid var(--linea)}
+.pasos li::before{counter-increment:p;content:counter(p);font-family:var(--display);font-size:28px;color:var(--amarillo);line-height:1}
+.pasos strong{display:block;font-size:16.5px}
+.pasos span{color:var(--gris);font-size:15px}
+.calculadora{background:var(--hueso);color:var(--tinta);border-radius:14px;padding:26px 24px 24px;box-shadow:0 30px 60px -28px #000}
+.calculadora h3{font-size:25px;letter-spacing:.02em}
+.calculadora > p{font-size:14.5px;color:var(--tinta-2);margin:6px 0 20px}
+.campos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.campos .full{grid-column:1/-1}
+.calculadora label{display:grid;gap:6px;font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--tinta-2);font-weight:700}
+.calculadora input,.calculadora select{width:100%;background:#fff;border:1.5px solid #11121428;color:var(--tinta);border-radius:8px;padding:12px 12px;font-family:var(--texto);font-size:16px;letter-spacing:0;text-transform:none;font-weight:500}
+.calculadora input:focus,.calculadora select:focus{outline:none;border-color:var(--tinta);box-shadow:0 0 0 3px #ffd21e88}
+.salida{margin:18px 0 16px;background:var(--tinta);color:var(--blanco);border-radius:10px;padding:14px 16px;font-size:15.5px;line-height:1.45;min-height:76px}
+.salida b{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--amarillo);margin-bottom:6px}
+.calculadora .bt{width:100%}
+.calculadora .bt + .bt{margin-top:10px}
+.calculadora small{display:block;text-align:center;color:var(--tinta-2);font-size:13px;margin-top:12px}
+
+/* ---------- leer la medida ---------- */
+.leer{background:var(--hueso);color:var(--tinta)}
+.leer .caja{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.leer h2{max-width:14ch}
+.leer p.lead{color:var(--tinta-2);margin:16px 0 24px;font-size:18px}
+.flanco{background:var(--tinta);border-radius:16px;padding:26px 22px;color:var(--blanco)}
+.flanco .codigo{font-family:var(--display);font-size:clamp(34px,5.6vw,54px);letter-spacing:.04em;text-align:center;color:var(--amarillo)}
+.flanco .codigo span{color:var(--blanco)}
+.desglose{list-style:none;display:grid;gap:12px;margin-top:22px}
+.desglose li{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:baseline;border-top:1px dashed #ffffff26;padding-top:12px}
+.desglose .k{font-family:var(--display);font-size:22px;color:var(--amarillo);letter-spacing:.03em}
+.desglose b{display:block;font-size:15.5px}
+.desglose span{color:#a9adb5;font-size:14.5px;line-height:1.4}
+.nota-dorso{margin-top:18px;background:#ffd21e14;border:1px solid #ffd21e40;border-radius:10px;padding:12px 14px;font-size:14.5px;color:#f1e6bd}
+
+/* ---------- señales ---------- */
+.senales .caja{position:relative}
+.cabeza{display:grid;grid-template-columns:1fr .85fr;gap:28px;align-items:end;margin-bottom:36px}
+.cabeza p{color:var(--gris-2);font-size:17.5px}
+.grilla-s{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.senal{background:var(--asfalto-2);border:1px solid var(--linea);border-radius:12px;padding:22px 20px;position:relative;overflow:hidden}
+.senal::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--amarillo)}
+.senal .ic{width:42px;height:42px;border-radius:10px;background:var(--amarillo-osc);color:var(--amarillo);display:grid;place-items:center;margin-bottom:14px}
+.senal .ic svg{width:22px;height:22px}
+.senal h3{font-size:21px;letter-spacing:.02em;margin-bottom:8px}
+.senal p{color:var(--gris);font-size:15px;line-height:1.45}
+
+/* ---------- google ---------- */
+.google-bloque{background:var(--amarillo);color:#17140a;padding:64px 0;position:relative;overflow:hidden}
+.google-bloque::before{content:'4,5';position:absolute;right:-1%;top:50%;translate:0 -50%;font-family:var(--display);font-size:clamp(200px,30vw,420px);color:#17140a14;line-height:.8;pointer-events:none}
+.google-bloque .caja{position:relative;display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center}
+.puntaje{text-align:center}
+.puntaje b{display:block;font-family:var(--display);font-size:86px;line-height:.85;letter-spacing:.01em}
+.puntaje .est{display:block;font-size:22px;letter-spacing:3px;margin-top:6px}
+.puntaje small{display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;margin-top:8px}
+.google-bloque h2{font-size:clamp(28px,4.2vw,46px);max-width:18ch}
+.google-bloque p{margin-top:12px;font-size:17.5px;max-width:52ch;color:#2b2510}
+
+/* ---------- dónde ---------- */
+.donde{background:var(--asfalto-2)}
+.donde .caja{display:grid;grid-template-columns:.85fr 1.15fr;gap:32px;align-items:start}
+.info{display:grid;gap:12px;margin-top:22px}
+.info .fila{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start;background:var(--asfalto-3);border:1px solid var(--linea);border-radius:12px;padding:14px 16px}
+.info .ic{width:42px;height:42px;border-radius:10px;background:var(--amarillo-osc);color:var(--amarillo);display:grid;place-items:center}
+.info .ic svg{width:21px;height:21px}
+.info b{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gris);margin-bottom:3px}
+.info a{font-weight:600;text-decoration:none}
+.info a:hover{color:var(--amarillo)}
+.mapa{border-radius:14px;overflow:hidden;min-height:400px;border:1px solid var(--linea);background:var(--asfalto-3)}
+.mapa iframe{width:100%;height:100%;min-height:400px;border:0;display:block;filter:grayscale(.25)}
+
+/* ---------- cierre ---------- */
+.cierre{background:var(--asfalto);padding:78px 0;border-top:1px solid var(--linea)}
+.cierre h2{font-size:clamp(32px,5.4vw,58px);max-width:16ch}
+.cierre p{color:var(--gris-2);font-size:18px;margin:14px 0 26px;max-width:50ch}
+
+footer{padding:28px 0 32px;color:var(--gris);font-size:14px;border-top:1px solid var(--linea);background:var(--asfalto-2)}
+footer .caja{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+footer a{color:var(--gris-2);text-decoration:none}
+
+/* barra fija del celular */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#0e0e10f5;backdrop-filter:blur(10px);border-top:1px solid var(--linea)}
+.barra .bt{padding:14px 10px;font-size:16px;white-space:nowrap;gap:8px}
+.barra .bt svg{width:18px;height:18px}
+
+@media (prefers-reduced-motion:reduce){.cinta-track{animation:none}}
+
+@media (max-width:980px){
+  .nav{display:none}
+  .portada .caja,.medida .caja,.leer .caja,.donde .caja,.cabeza,.google-bloque .caja{grid-template-columns:1fr}
+  .portada{padding:34px 0 50px}
+  .rueda{order:-1;max-width:360px;margin-inline:auto}
+  .datos ul{grid-template-columns:1fr 1fr}
+  .datos li{padding:18px 14px}
+  .datos li:nth-child(3){border-left:0;padding-left:0}
+  .datos li:nth-child(-n+2){border-bottom:1px solid var(--linea)}
+  .grilla-s{grid-template-columns:1fr 1fr}
+  .google-bloque .caja{gap:20px;justify-items:start}
+  section{padding:58px 0}
+  .barra{display:grid}
+  footer{padding-bottom:96px}
+  .mapa,.mapa iframe{min-height:300px}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .campos{grid-template-columns:1fr 1fr}
+  .grilla-s{grid-template-columns:1fr}
+  .portada .botones .bt{width:100%}
+  .calculadora{padding:20px 16px}
+  .marca small{display:none}
+  .top .bt span{display:none}
+  .top .bt{padding:11px 14px}
+  .puntaje b{font-size:66px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="caja">
+    <a class="marca" href="#">
+      <span class="sigla">NY</span>
+      <span><b>Neumáticos Yrigoyen</b><small>24 horas · Morón</small></span>
+    </a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#medida">Tu medida</a>
+      <a href="#leer">Cómo leerla</a>
+      <a href="#senales">Cuándo cambiarlas</a>
+      <a href="#donde">Dónde estamos</a>
+    </nav>
+    <a class="bt bt-am" href="tel:+541169871545" aria-label="Llamar al 6987-1545">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span>6987-1545</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="portada">
+    <div class="caja">
+      <div>
+        <div class="rotulo">Gomería 24 horas · Av. H. Yrigoyen 33, Morón</div>
+        <h1>Abrimos las 24 horas. <em>Los 7 días.</em></h1>
+        <p class="bajada">Sobre Av. Hipólito Yrigoyen 33, en Morón. A las 3 de la tarde o a las 3 de la
+          mañana, estamos. Autos y motos. Pasanos la medida de tu cubierta y consultás sin moverte de casa.</p>
+        <div class="botones">
+          <a class="bt bt-wa" href="#medida">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1.1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.3 13.3 0 0 0 5.1 4.5c.7.3 1.3.5 1.7.6a4.2 4.2 0 0 0 1.9.1 3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.6 17.9L0 24l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4 11.8 11.8 0 0 0 8.4-20.2z"/></svg>
+            Consultar mi medida</a>
+          <a class="bt bt-linea" href="tel:+541169871545">Llamar al local</a>
+        </div>
+        <div class="estrellas-linea"><b>4,5</b><span class="est" aria-hidden="true">★★★★★</span><span>en Google, sobre <b style="font-family:inherit;font-size:inherit;color:var(--blanco)">348 opiniones</b></span></div>
+      </div>
+
+      <div class="rueda">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Dibujo de un neumático con la medida marcada en el flanco">
+          <defs>
+            <radialGradient id="goma" cx="50%" cy="42%" r="62%">
+              <stop offset="0%" stop-color="#3a3d44"/><stop offset="70%" stop-color="#1c1e22"/><stop offset="100%" stop-color="#0b0c0e"/>
+            </radialGradient>
+            <linearGradient id="llanta" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#e6e8ec"/><stop offset="55%" stop-color="#9aa0aa"/><stop offset="100%" stop-color="#5d626b"/>
+            </linearGradient>
+          </defs>
+          <circle cx="200" cy="200" r="188" fill="url(#goma)"/>
+          <circle cx="200" cy="200" r="188" fill="none" stroke="#000" stroke-width="3"/>
+          <!-- dibujo de la banda de rodamiento -->
+          <g stroke="#0a0b0d" stroke-width="7" opacity=".85">
+            <circle cx="200" cy="200" r="178" fill="none" stroke-dasharray="16 12"/>
+            <circle cx="200" cy="200" r="162" fill="none" stroke-dasharray="10 14"/>
+          </g>
+          <circle cx="200" cy="200" r="150" fill="none" stroke="#33363d" stroke-width="2"/>
+          <!-- flanco con la medida -->
+          <circle cx="200" cy="200" r="126" fill="#16181c" stroke="#2a2d33" stroke-width="2"/>
+          <text x="200" y="98" text-anchor="middle" font-family="Anton, Impact, sans-serif" font-size="27" fill="#ffd21e" letter-spacing="2">195/65 R15</text>
+          <text x="200" y="320" text-anchor="middle" font-family="Roboto Mono, monospace" font-size="15" fill="#8d9199" letter-spacing="3">TU MEDIDA</text>
+          <!-- llanta -->
+          <circle cx="200" cy="200" r="96" fill="url(#llanta)"/>
+          <circle cx="200" cy="200" r="84" fill="#1a1c20"/>
+          <g fill="url(#llanta)">
+            <path d="M200 120 L222 178 L200 196 L178 178 Z"/>
+            <path d="M276 176 L226 210 L214 187 L232 166 Z"/>
+            <path d="M247 265 L211 217 L232 205 L254 222 Z"/>
+            <path d="M153 265 L189 217 L168 205 L146 222 Z"/>
+            <path d="M124 176 L174 210 L186 187 L168 166 Z"/>
+          </g>
+          <circle cx="200" cy="200" r="27" fill="#c9ced6"/>
+          <circle cx="200" cy="200" r="19" fill="#6d727b"/>
+          <g fill="#2b2e34">
+            <circle cx="200" cy="181" r="5"/><circle cx="218" cy="194" r="5"/>
+            <circle cx="211" cy="215" r="5"/><circle cx="189" cy="215" r="5"/><circle cx="182" cy="194" r="5"/>
+          </g>
+        </svg>
+        <div class="sello24" aria-hidden="true"><div><b>24 h</b><span>los 7<br>días</span></div></div>
+        <p class="pie">La medida está escrita en el costado de la cubierta</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cinta" aria-hidden="true"><div class="cinta-track">
+    <span>Abierto las 24 horas</span><span>Los 7 días</span><span>Autos y motos</span><span>Av. H. Yrigoyen 33</span><span>011 6987-1545</span><span>348 opiniones en Google</span>
+    <span>Abierto las 24 horas</span><span>Los 7 días</span><span>Autos y motos</span><span>Av. H. Yrigoyen 33</span><span>011 6987-1545</span><span>348 opiniones en Google</span>
+  </div></div>
+
+  <div class="datos">
+    <ul class="caja">
+      <li><strong><i>24</i> horas</strong><span>abierto los 7 días de la semana</span></li>
+      <li><strong><i>4,5</i> ★</strong><span>en Google, sobre 348 opiniones</span></li>
+      <li><strong>Autos <i>y</i> motos</strong><span>atendemos las dos cosas</span></li>
+      <li><strong>Yrigoyen <i>33</i></strong><span>Morón, sobre la avenida</span></li>
+    </ul>
+  </div>
+
+  <section class="medida" id="medida">
+    <div class="caja">
+      <div>
+        <div class="rotulo">Consultá tu medida</div>
+        <h2>Tres números y te contestamos</h2>
+        <p class="lead">No hace falta que sepas de cubiertas. Con la medida que está escrita en el costado
+          alcanza para que te digamos qué tenemos y cuánto sale.</p>
+        <ol class="pasos">
+          <li><div><strong>Mirá el costado de la cubierta</strong><span>Vas a ver algo como 195/65 R15. Ese es el dato.</span></div></li>
+          <li><div><strong>Cargalo acá al lado</strong><span>El mensaje se arma solo, no tenés que escribir nada.</span></div></li>
+          <li><div><strong>Mandalo o llamanos</strong><span>Al 011 6987-1545, o pasá por Av. H. Yrigoyen 33.</span></div></li>
+        </ol>
+      </div>
+
+      <form class="calculadora" id="calc" autocomplete="off">
+        <h3>Armá tu consulta</h3>
+        <p>Completá lo que sepas. Si te falta un dato, mandalo igual.</p>
+        <div class="campos">
+          <label>Ancho<input id="fAncho" inputmode="numeric" placeholder="195"></label>
+          <label>Perfil<input id="fPerfil" inputmode="numeric" placeholder="65"></label>
+          <label>Rodado<input id="fRodado" inputmode="numeric" placeholder="15"></label>
+          <label class="full">Auto o moto (marca y modelo)<input id="fAuto" placeholder="Ej: Volkswagen Gol"></label>
+          <label class="full">¿Cuántas cubiertas necesitás?
+            <select id="fCant">
+              <option value="">Elegí una opción</option>
+              <option>1 cubierta</option>
+              <option>2 cubiertas</option>
+              <option>4 cubiertas</option>
+              <option>Todavía no sé</option>
+            </select>
+          </label>
+        </div>
+        <div class="salida" id="salida" aria-live="polite"><b>Tu mensaje</b><span id="salidaTxt">Hola, quería consultar por cubiertas.</span></div>
+        <button class="bt bt-wa" type="submit">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1.1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.3 13.3 0 0 0 5.1 4.5c.7.3 1.3.5 1.7.6a4.2 4.2 0 0 0 1.9.1 3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.6 17.9L0 24l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4 11.8 11.8 0 0 0 8.4-20.2z"/></svg>
+          Mandar por WhatsApp</button>
+        <a class="bt bt-linea" href="tel:+541169871545" style="border-color:#11121440;color:#111214">Prefiero llamar</a>
+        <small>Si podés, sacale una foto al costado de la cubierta y adjuntala.</small>
+      </form>
+    </div>
+  </section>
+
+  <section class="leer" id="leer">
+    <div class="caja">
+      <div>
+        <div class="rotulo">Cómo se lee</div>
+        <h2>Ese código raro del costado</h2>
+        <p class="lead">Todas las cubiertas lo tienen escrito en relieve sobre la goma. Son tres números
+          que definen si la cubierta entra o no en tu auto. Con esto ya podés consultarnos.</p>
+        <div class="botones">
+          <a class="bt bt-am" href="#medida">Consultar con mi medida</a>
+        </div>
+      </div>
+      <div class="flanco">
+        <div class="codigo">195<span>/</span>65<span> </span>R15</div>
+        <ul class="desglose">
+          <li><span class="k">195</span><div><b>Ancho de la cubierta</b><span>En milímetros, de un borde al otro de la banda que apoya en el piso.</span></div></li>
+          <li><span class="k">65</span><div><b>Perfil</b><span>La altura del costado, como porcentaje del ancho. Más bajo, más "chata" se ve.</span></div></li>
+          <li><span class="k">R15</span><div><b>Rodado</b><span>El diámetro de la llanta en pulgadas. Este número tiene que coincidir sí o sí.</span></div></li>
+        </ul>
+        <p class="nota-dorso">¿No encontrás el código? Suele estar también en una etiqueta en el marco de la
+          puerta del conductor o en el manual del auto. Si no aparece, pasá por el local con el auto y lo miramos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="senales" id="senales">
+    <div class="caja">
+      <div class="cabeza">
+        <div><div class="rotulo">Cuándo conviene cambiarlas</div><h2>Cuatro señales que no conviene dejar pasar</h2></div>
+        <p>La cubierta es lo único que toca el piso. Si ves alguna de estas cosas, vení y la miramos
+          juntos antes de que se transforme en un problema.</p>
+      </div>
+      <div class="grilla-s">
+        <article class="senal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17h18M5 17V9m4 8V7m5 10V9m5 8v-6"/></svg></div>
+          <h3>Dibujo gastado</h3>
+          <p>Si la banda quedó lisa o casi lisa, en piso mojado la frenada se alarga un montón.</p>
+        </article>
+        <article class="senal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M4 8l16 8M4 16l16-8"/></svg></div>
+          <h3>Se gasta de un solo lado</h3>
+          <p>Cuando se come el borde interno o externo, casi siempre hay algo del tren delantero para revisar.</p>
+        </article>
+        <article class="senal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 13c1.5-2 2.5-2 4 0s2.5 2 4 0"/></svg></div>
+          <h3>Bulto o corte en el costado</h3>
+          <p>Un chichón en el flanco es motivo para cambiarla ya. Ahí la cubierta puede reventar.</p>
+        </article>
+        <article class="senal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Años encima</h3>
+          <p>Aunque tengan dibujo, la goma se endurece con el tiempo. Se nota al tacto y en la frenada.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="google-bloque">
+    <div class="caja">
+      <div class="puntaje">
+        <b>4,5</b>
+        <span class="est" aria-hidden="true">★★★★★</span>
+        <small>348 opiniones</small>
+      </div>
+      <div>
+        <h2>348 personas nos calificaron. Nos pusieron 4,5</h2>
+        <p>No es una opinión suelta: son cientos de vecinos de Morón que pasaron por acá, muchos
+          de madrugada. Está todo publicado en nuestra ficha de Google, lo podés leer vos mismo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="donde" id="donde">
+    <div class="caja">
+      <div>
+        <div class="rotulo">Dónde estamos</div>
+        <h2>Sobre Yrigoyen, en pleno Morón</h2>
+        <div class="info">
+          <div class="fila"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2C20 17.5 12 22 12 22z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><b>Dirección</b>Av. Hipólito Yrigoyen 33, Morón (B1708)<br><a href="https://www.google.com/maps/search/?api=1&query=Neum%C3%A1ticos+Yrigoyen+Av.+Hip%C3%B3lito+Yrigoyen+33+Mor%C3%B3n" target="_blank" rel="noopener">Cómo llegar →</a></div></div>
+          <div class="fila"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
+            <div><b>Teléfono</b><a href="tel:+541169871545">011 6987-1545</a></div></div>
+          <!-- Horario tomado de la ficha de Google (los 7 días, 24 h). Confirmar con el dueño. -->
+          <div class="fila"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <div><b>Horarios</b>Abierto las 24 horas, los 7 días de la semana.</div></div>
+        </div>
+      </div>
+      <div class="mapa">
+        <iframe title="Mapa: Av. Hipólito Yrigoyen 33, Morón" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Av.+Hip%C3%B3lito+Yrigoyen+33,+Mor%C3%B3n,+Buenos+Aires&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="cierre">
+    <div class="caja">
+      <h2>¿Se te pinchó a las tres de la mañana?</h2>
+      <p>Vení igual. Estamos abiertos las 24 horas, los 7 días, en Av. H. Yrigoyen 33. Autos y motos.</p>
+      <div class="botones">
+        <a class="bt bt-wa" href="#medida">Consultar por WhatsApp</a>
+        <a class="bt bt-linea" href="tel:+541169871545">Llamar al 6987-1545</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="caja">
+    <a class="marca" href="#"><span class="sigla">NY</span><span><b>Neumáticos Yrigoyen</b><small>Av. H. Yrigoyen 33, Morón · 24 horas</small></span></a>
+    <span><a href="tel:+541169871545">011 6987-1545</a> · <a href="https://www.google.com/maps/search/?api=1&query=Neum%C3%A1ticos+Yrigoyen+Av.+Hip%C3%B3lito+Yrigoyen+33+Mor%C3%B3n" target="_blank" rel="noopener">Ver en Google Maps</a></span>
+  </div>
+</footer>
+
+<div class="barra">
+  <a class="bt bt-wa" href="#medida">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1.1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.3 13.3 0 0 0 5.1 4.5c.7.3 1.3.5 1.7.6a4.2 4.2 0 0 0 1.9.1 3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.6 17.9L0 24l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4 11.8 11.8 0 0 0 8.4-20.2z"/></svg>
+    Mi medida</a>
+  <a class="bt bt-linea" href="tel:+541169871545">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+    Llamar</a>
+</div>
+
+<script>
+// Arma el mensaje de WhatsApp con la medida que cargó la persona.
+// DUDA: confirmar si el 011 6987-1545 tiene WhatsApp. Si no, se saca el botón y queda solo el teléfono.
+(function () {
+  var f = document.getElementById('calc');
+  var out = document.getElementById('salidaTxt');
+  var v = function (id) { return (document.getElementById(id).value || '').trim(); };
+  function armar() {
+    var an = v('fAncho'), pe = v('fPerfil'), ro = v('fRodado'), au = v('fAuto'), ca = v('fCant');
+    var medida = '';
+    if (an && pe && ro) medida = an + '/' + pe + ' R' + ro;
+    else if (an || pe || ro) medida = [an, pe, ro].filter(Boolean).join(' ');
+    var t = 'Hola, quería consultar por cubiertas';
+    if (medida) t += ' medida ' + medida;
+    if (au) t += ' para un ' + au;
+    t += '.';
+    if (ca && ca.indexOf('Todavía') !== 0) t += ' Necesito ' + ca.toLowerCase() + '.';
+    if (ca && ca.indexOf('Todavía') === 0) t += ' Todavía no sé cuántas necesito.';
+    return t;
+  }
+  f.addEventListener('input', function () { out.textContent = armar(); });
+  f.addEventListener('change', function () { out.textContent = armar(); });
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    window.open('https://wa.me/5491169871545?text=' + encodeURIComponent(armar() + ' (Te escribo desde la web)'), '_blank');
+  });
+})();
+</script>
+</body>
+</html>
